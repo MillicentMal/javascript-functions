@@ -1,5 +1,6 @@
-function seed(arguments) {
-return arguments
+function seed() {
+  let seeds = Array.from(arguments);
+  return seeds;
 }
 
 

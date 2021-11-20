@@ -5,7 +5,23 @@ function seed() {
 
 
 
-function same([x, y], [j, k]) {}
+function same([x, y], [j, k]) {
+  let a = [x, y];
+ let b = [j, k];
+  // if length is not equal
+  if(a.length!=b.length)
+   return "False";
+  else
+  {
+  // comapring each element of array
+   for(var i=0;i<a.length;i++)
+   if(a[i]!=b[i])
+    return false;
+    return true;
+  }
+}
+
+
 
 // The game state to search for `cell` is passed as the `this` value of the function.
 function contains(cell) {}
